@@ -1,4 +1,5 @@
 import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 
 function Auth() {
   const [email, setEmail] = useState("");
@@ -16,6 +17,10 @@ function Auth() {
     event.preventDefault();
     const lendsqrUser = { email, password };
     localStorage.setItem("lendsqrUser", JSON.stringify(lendsqrUser));
+    const storedUser = localStorage.getItem("lendsqrUser");
+    if (storedUser) {
+      window.location.href = "/";
+    }
   };
 
   return (

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { RouterProvider } from "react-router-dom";
 import routes from "./routes";
+import { IUser } from "./components/interface";
 
 function App() {
-  const user = localStorage.getItem(JSON.parse("lendsqrUser"));
+  const [user, setUser] = useState<IUser | null>(null);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("lendsqrUser");
+    if (storedUser) {
+      const parsedItem = JSON.parse(storedUser) as IUser;
+      setUser(parsedItem);
+    }
+  }, []);
   return (
     <>
       <RouterProvider router={routes(user)} />
