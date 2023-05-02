@@ -1,5 +1,39 @@
 * {
-     border: 0;
-     margin: 0;
-     box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$page-bg: #fff;
+$auth-width: 50%;
+$auth-heigt: 100vh;
+
+.authPage {
+  display: flex;
+  justify-content: space-between;
+  //   padding: 100px 100px 0 100px;
+
+  .leftAuthPage {
+    background: #f4f4f4;
+    width: $auth-width;
+    height: $auth-heigt;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+    .iconLogo {
+      margin-right: 10px;
+    }
+
+    .onboardingImg {
+      padding-top: 500px;
+    }
+  }
+
+  .rightAuthPage {
+    background: $page-bg;
+    width: $auth-width;
+    height: $auth-heigt;
+  }
 }
