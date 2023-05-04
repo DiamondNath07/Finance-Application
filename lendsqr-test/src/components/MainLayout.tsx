@@ -1,19 +1,20 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
-import SideNav from "./SideNav";
+import SideNav from "./sideNav/SideNav";
+import "../pages/App.scss";
 
 export default function MainLayout() {
   return (
-    <section>
-      <header style={{ height: "20px", backgroundColor: "red", width: "100%" }}>
-        <Header />
+    <section className="pageLayout">
+      <header className="sidenav">
+        <SideNav />
       </header>
-      <section style={{ display: "flex", height: "100vh" }}>
-        <div style={{ width: "30%", backgroundColor: "blue" }}>
-          <SideNav />
+      <section className="pageBody">
+        <div className="header">
+          <Header />
         </div>
-        <div style={{ width: "70%", backgroundColor: "pink" }}>
+        <div className="outlet">
           <Outlet />
         </div>
       </section>
