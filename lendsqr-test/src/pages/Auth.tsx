@@ -1,11 +1,8 @@
 import { useState } from "react";
 import "./App.scss";
-// import lendsqr from "../../public/images/lendsqr.svg";
-// import logo from "../../public/images/Union.png";
-// import artWork from "./images/onboardingImg.svg";
-
-// import { useNavigate } from "react-router-dom";
 import Lendsqr from "../assets/images/lendsqr.svg";
+import Logo from "../assets/images/logo.svg";
+import OnboardingImg from "../assets/images/onbaordingImg.png";
 
 function Auth() {
   const [email, setEmail] = useState("");
@@ -33,37 +30,44 @@ function Auth() {
     <div className="authPage">
       <div className="leftAuthPage">
         <span className="logo">
-          {/* <img src={logo} alt="logo" className="iconLogo" /> */}
-
+          <img src={Logo} alt="logo" className="iconLogo" />
           <img src={Lendsqr} alt="text" />
         </span>
-        <span className="onboarding">
-          {/* <img src={artWork} alt="artwork" /> */}
+        <span className="onboardingImg">
+          <img src={OnboardingImg} alt="artwork" className="artwork" />
         </span>
       </div>
 
       <div className="rightAuthPage">
-        <h1>Authentication Page</h1>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={email}
-            onChange={handleEmailChange}
-          />
-          <br />
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={password}
-            onChange={handlePasswordChange}
-          />
-          <br />
-          <button type="submit">Submit</button>
+        <header>
+          <h1 className="title">Welcome!</h1>
+          <p className="titleText">Enter details to login</p>
+        </header>
+        <form onSubmit={handleSubmit} className="form">
+          <div className="email">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              value={email}
+              onChange={handleEmailChange}
+              className="emailInput"
+            />
+          </div>
+          <div className="password">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              value={password}
+              onChange={handlePasswordChange}
+            />
+            <p className="displayPasscode">SHOW</p>
+          </div>
+            <p className="passwordRetrieve">forgot password</p>
+          <div className="submitBtn">
+            <button type="submit">log in</button>
+          </div>
         </form>
       </div>
     </div>
