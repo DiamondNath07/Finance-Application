@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { MdAddHomeWork } from "react-icons/md";
 import { sideNavData } from "./navData";
 import logo from "../../assets/images/logo.svg";
 import logoText from "../../assets/images/lendsqr.svg";
@@ -23,17 +22,17 @@ export default function SideNav() {
         </div>
 
         <div className="dashboardTab">
-          <img src={homeIcon} alt="" />
+          <img src={homeIcon} alt="homeIcon" />
           <p>Dashboard</p>
         </div>
 
-        <section>
+        <section className="dataTabs">
           {sideNavData.map((data) => (
             <Fragment key={data.id}>
-              <div>{data.name}</div>
+              <div className="category">{data.name}</div>
               {data.children.map((child) => (
-                <article key={child.id} style={{ paddingLeft: "10px" }}>
-                  <div>{child.item}</div>
+                <article key={child.id} >
+                  <div className="detailsInCategory">{child.item}</div>
                 </article>
               ))}
             </Fragment>
