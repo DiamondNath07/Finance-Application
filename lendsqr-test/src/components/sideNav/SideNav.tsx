@@ -32,7 +32,9 @@ export default function SideNav() {
               <div className="category">{data.name}</div>
               {data.children.map((child) => (
                 <article key={child.id} >
-                  <div className="detailsInCategory">{child.item}</div>
+                  <div className="detailsInCategory">
+                    <div className="bar"></div>
+                    {child.item}</div>
                 </article>
               ))}
             </Fragment>

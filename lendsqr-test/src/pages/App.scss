@@ -9,6 +9,10 @@ $auth-width: 50%;
 $auth-heigt: 100vh;
 $textFont: 'Avenir Next', sans-serif;
 $fontColorG: #39cdcc;
+$textFont2: 'Open Sans', sans-serif;
+$textFont3: 'Roboto', sans-serif;
+
+// Login page
 
 .authPage {
   display: flex;
@@ -134,13 +138,14 @@ $fontColorG: #39cdcc;
 }
 
 .sidenav {
-  width: 18%;
+  width: 22%;
   height: 100vh;
   background-color: #fff;
   box-shadow: 2px 0 5px -5px rgba(0, 0, 0, 0.5);
 }
 
 .pageBody {
+  width: 100%;
   height: 100%;
 
   .header {
@@ -161,11 +166,11 @@ $fontColorG: #39cdcc;
 
 .navheader {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   height: 70px;
   box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  padding: 10px 0 0 20px;
 
   .logo1 {
     width: 20px;
@@ -179,7 +184,7 @@ $fontColorG: #39cdcc;
 }
 
 main {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $textFont2;
   // padding-left: 20px;
   color: #213f7d;
   font-size: 16px;
@@ -225,22 +230,116 @@ main {
       margin-top: 20px;
       // padding-left: 20px;
       padding: 10px 0 10px 20px;
-      position: relative;   
+      position: relative;
+    }
+
+    .bar {
+      width: 2px;
+      height: 100%;
+      background-color: #39cdcc;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+    .detailsInCategory:hover .bar {
+      opacity: 1;
     }
     .detailsInCategory:hover {
       background-color: #21407d4b;
       cursor: pointer;
     }
+  }
+}
 
-    .detailsInCategory:after {
-      content: '';
+// header
+
+.navbar {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.5);
+  height: 70px;
+
+  .leftDetails {
+    display: flex;
+    position: relative;
+
+    .searchContainer {
+      border: 1px solid #93939675;
+      border-radius: 5px;
+    }
+
+    .searchInput {
+      width: 300px;
+      height: 30px;
+      padding-left: 5px;
+      outline: none;
+    }
+    .searchInput::placeholder {
+      font-family: $textFont;
+      font-size: 11px;
+    }
+
+    .searchBtn {
       position: absolute;
-      background-color: red;
       top: 0;
-      left: 0;
       right: 0;
-      bottom: 0;
-      width: 2px;
+      width: 40px;
+      height: 100%;
+      border-radius: 0 5px 5px 0;
+      background-color: #39cdcc;
+    }
+  }
+
+  .userMenu {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      li {
+        list-style: none;
+        padding: 0 10px;
+        font-size: 16px;
+        font-family: $textFont3;
+      }
+    }
+
+    .notificationIcon {
+      width: 20px;
+    }
+
+    .userDetails {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      padding: 0 10px;
+
+      .userPic {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+
+      p {
+        font-size: 16px;
+        padding: 0 10px;
+        margin-top: 15px;
+        text-transform: capitalize;
+        font-family: $textFont3;
+      }
+
+      .arrowDown {
+        width: 8px;
+        height: 8px;
+        margin-top: 20px;
+      }
     }
   }
 }
