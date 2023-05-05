@@ -17,7 +17,6 @@ $textFont3: 'Roboto', sans-serif;
 .authPage {
   display: flex;
   justify-content: space-between;
-  //   padding: 100px 100px 0 100px;
 
   .leftAuthPage {
     background: #f4f4f4;
@@ -348,5 +347,47 @@ main {
 
 .userDashboard {
   height: 100vh;
-  padding: 50px 50px 0 50px;
+  padding: 50px 70px 0 70px;
+
+  .userTypes {
+
+    h2 {
+      font-size: 18px;
+      font-weight: 400;
+      color: #545f7d;
+      font-family: $textFont;
+      font-weight: 500;
+    }
+
+    .userCards {
+      display: grid;
+      grid-template-columns: repeat(4, 200px);
+      margin-top: 10px;
+      gap: 10px;
+
+      .userAccounts {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+
+        .accountTypes {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-family: $textFont2;
+          font-weight: 500;
+          margin:  5px 0;
+          color: #545F7D;
+        }
+        .accountCount {
+          font-family: $textFont;
+          font-weight: 500;
+          color: #213F7D;
+        }
+
+      }
+    }
+  }
+
+  
 }
+
+
