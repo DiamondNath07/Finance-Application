@@ -366,12 +366,10 @@ $textFont3: "Roboto", sans-serif;
   overflow-y: auto;
 
   .userTypes {
-    position: sticky;
-    top: 0px;
     background-color: #f4f4f4;
     padding: 50px 70px 0 70px;
     width: 100%;
-    z-index: 2;
+    
 
     h2 {
       font-size: 18px;
