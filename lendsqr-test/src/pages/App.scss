@@ -232,8 +232,6 @@ main {
       position: relative;
     }
 
-    
-
     .bar {
       width: 2px;
       height: 100%;
@@ -252,7 +250,6 @@ main {
     .itemNames {
       margin-left: 10px;
     }
-
 
     .detailsInCategory:hover .bar {
       opacity: 1;
@@ -363,7 +360,6 @@ main {
   padding: 50px 70px 0 70px;
 
   .userTypes {
-
     h2 {
       font-size: 18px;
       font-weight: 400;
@@ -387,15 +383,14 @@ main {
           font-size: 12px;
           font-family: $textFont2;
           font-weight: 500;
-          margin:  5px 0;
-          color: #545F7D;
+          margin: 5px 0;
+          color: #545f7d;
         }
         .accountCount {
           font-family: $textFont;
           font-weight: 500;
-          color: #213F7D;
+          color: #213f7d;
         }
-
       }
     }
   }
@@ -409,8 +404,45 @@ main {
       display: flex;
       align-items: center;
     }
-  }
 
+    // position: relative;
+
+    // padding: 30px;
+    // box-shadow: 5px 5px 5px #888888;
+
+    .tableRow {
+      // position: relative;
+      th {
+        // display: flex;
+        // justify-content: flex-start;
+        text-align: start;
+        font-size: 12px;
+        font-family: $textFont2;
+        color: #545f7d;
+
+        img {
+          width: 12px;
+          margin-left: 5px;
+          color: #545f7d;
+        }
+      }
+    }
+
+    .tBody {
+      td {
+        text-align: start;
+        font-size: 14px;
+        color: #545f7d;
+        padding: 20px 0;
+        padding-right: 20px;
+        border-bottom: 1px solid #9495995d;
+      }
+
+      .optionBar {
+        padding-left: 50px;
+      }
+    }
+  }
 }
 
 // userdeatails
@@ -425,7 +457,7 @@ main {
     justify-content: center;
     font-family: $textFont2;
     font-size: 16px;
-    color: #545F7D;
+    color: #545f7d;
     background-color: #f4f4f4;
   }
 
@@ -439,37 +471,27 @@ main {
       font-size: 14px;
       font-family: $textFont2;
       margin-left: 10px;
-      color: #545F7D;
+      color: #545f7d;
       margin-top: 20px;
-    } 
-      .btn1,
-      .btn2{
-        width: 120px;
-        height: 30px;
-        border-radius: 5px;
-        background-color: #f4f4f4;
-        border: 1px solid #E4033B;
-        text-transform: uppercase;
-        font-size: 10px;
-        color: #E4033B;
-        font-weight: 500;
-        font-family: $textFont;
-        margin-right: 5px;
+    }
+    .btn1,
+    .btn2 {
+      width: 120px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: #f4f4f4;
+      border: 1px solid #e4033b;
+      text-transform: uppercase;
+      font-size: 10px;
+      color: #e4033b;
+      font-weight: 500;
+      font-family: $textFont;
+      margin-right: 5px;
+    }
 
-      }
-
-      .btn2 {
-        border: 1px solid #39CDCC;
-        color: #39CDCC;
-      }
-
-      
-
-
+    .btn2 {
+      border: 1px solid #39cdcc;
+      color: #39cdcc;
+    }
   }
-
 }
-
-
-
-
