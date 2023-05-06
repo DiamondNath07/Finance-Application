@@ -2,11 +2,12 @@ import React from 'react';
 import filter from '../../assets/images/filter.png';
 import '../../pages/App.scss';
 export default function Thead() {
+  
   return (
     <>
       <tr className="tableRow">
         <th>
-          ORGANIZATION <img src={filter} alt="filterIcon" />
+          ORGANIZATION <img src={filter} alt="filterIcon"  />
         </th>
         <th>
           USERNAME <img src={filter} alt="filterIcon" />

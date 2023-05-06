@@ -7,10 +7,10 @@
 $page-bg: #fff;
 $auth-width: 50%;
 $auth-heigt: 100vh;
-$textFont: "Avenir Next", sans-serif;
+$textFont: 'Avenir Next', sans-serif;
 $fontColorG: #39cdcc;
-$textFont2: "Open Sans", sans-serif;
-$textFont3: "Roboto", sans-serif;
+$textFont2: 'Open Sans', sans-serif;
+$textFont3: 'Roboto', sans-serif;
 
 // Login page
 
@@ -362,10 +362,17 @@ $textFont3: "Roboto", sans-serif;
 // dashboard
 
 .userDashboard {
-  height: 100%;
-  padding: 50px 70px 0 70px;
+  height: 100vh;
+  overflow-y: auto;
 
   .userTypes {
+    position: sticky;
+    top: 0px;
+    background-color: #f4f4f4;
+    padding: 50px 70px 0 70px;
+    width: 100%;
+    z-index: 2;
+
     h2 {
       font-size: 18px;
       font-weight: 400;
@@ -405,6 +412,7 @@ $textFont3: "Roboto", sans-serif;
 
   .useChart {
     margin-top: 30px;
+    padding: 0px 70px 0 70px;
 
     .title {
       display: flex;
