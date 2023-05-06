@@ -30,7 +30,7 @@ export default function Usercard({ user }: { user: any }) {
       </div>
       <div className="userOption">
         <ul>
-          <li>General Details</li>
+          <li className="active">General Details</li>
           <li>Documents</li>
           <li>Bank Details</li>
           <li>Loans</li>

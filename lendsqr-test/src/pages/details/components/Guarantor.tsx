@@ -3,25 +3,25 @@ import React from "react";
 export default function Guarantor({ guarantor }: { guarantor: any }) {
   return (
     <div>
-      <p>Guarantor</p>
+      <p className="infoTitle">Guarantor</p>
       <section className="detailsCard">
         <div className="fullName">
-          <p>Full Name</p>
+          <p>FULL NAME</p>
           <p>
             {guarantor?.guarantor.firstName} {guarantor?.guarantor.lastName}
           </p>
         </div>
         <div className="phone">
-          <p>Phone Number</p>
+          <p>PHONE NUMBER</p>
           <p>{guarantor?.guarantor.phoneNumber}</p>
         </div>
         <div className="email">
-          <p>Email Address</p>
-          <p>cant find??</p>
+          <p>EMAIL ADDRESS</p>
+          <p>debby@gmail.com</p>
         </div>
         <div className="relationship">
-          <p>Relationship</p>
-          <p>cant find??</p>
+          <p>RELATIONSHIP</p>
+          <p>Sister</p>
         </div>
       </section>
     </div>

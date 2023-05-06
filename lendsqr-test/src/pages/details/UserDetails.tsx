@@ -19,11 +19,22 @@ export default function Userdetails() {
           <Usercard user={data?.data} />
         </>
       </section>
-      <section className="">
-        <PersonalInfo personal={data?.data} />
-        <EducationAndEmployment education={data?.data} />
-        <Socials socials={data?.data} />
-        <Guarantor guarantor={data?.data} />
+      <section className="generalInfo">
+        <div className="personalInfo">
+          <PersonalInfo personal={data?.data} />
+        </div>
+
+        <div className="personalInfo">
+          <EducationAndEmployment education={data?.data} />
+        </div>
+
+        <div className="personalInfo">
+          <Socials socials={data?.data} />
+        </div>
+
+        <div className="personalInfo">
+          <Guarantor guarantor={data?.data} />
+        </div>
       </section>
     </div>
   );

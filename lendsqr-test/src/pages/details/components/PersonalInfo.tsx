@@ -5,20 +5,20 @@ import "./detailscard.scss";
 export default function PersonalInfo({ personal }: { personal: any }) {
   return (
     <div>
-      <p>PersonalInformation</p>
+      <p className="infoTitle">Personal Information</p>
       <section className="detailsCard">
         <div className="fullName">
-          <p>Full Name</p>
+          <p>FULL NAME</p>
           <p>
             {personal?.profile.firstName} {personal?.profile.lastName}
           </p>
         </div>
         <div className="phone">
-          <p>Phone Number</p>
+          <p>PHONE NUMBER</p>
           <p>{personal?.profile.phoneNumber}</p>
         </div>
         <div className="email">
-          <p>Email</p>
+          <p>EMAIL</p>
           <p>{personal?.email}</p>
         </div>
         <div className="bvn">
@@ -26,20 +26,20 @@ export default function PersonalInfo({ personal }: { personal: any }) {
           <p>{personal?.profile.bvn}</p>
         </div>
         <div className="gender">
-          <p>Gender</p>
+          <p>GENDER</p>
           <p>{personal?.profile.gender}</p>
         </div>
         <div className="maritalstatus">
-          <p>Marital Status</p>
-          <p>cant find ??</p>
+          <p>MARITAL STATUS</p>
+          <p>Single</p>
         </div>
         <div className="children">
-          <p>Children</p>
-          <p>cant find ??</p>
+          <p>CHILDREN</p>
+          <p>None</p>
         </div>
         <div className="typeresidence">
-          <p>Type of Residence</p>
-          <p>cant find ??</p>
+          <p>TYPE OF RESIDENCE</p>
+          <p>Parent's Appartment</p>
         </div>
       </section>
     </div>
