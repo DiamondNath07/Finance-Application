@@ -8,7 +8,7 @@ import homeIcon from "../../assets/images/homeIcon.png";
 
 export default function SideNav() {
   return (
-    <div>
+    <div className="mySideNav">
       <header className="navheader">
         <img src={logo} alt="logo" className="logo1" />
         <img src={logoText} alt="logo" className="logo2" />
