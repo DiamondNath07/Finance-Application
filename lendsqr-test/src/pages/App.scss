@@ -497,7 +497,7 @@ main {
   }
 
   .userBoard {
-    // height: 100px;
+    
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 1px 1px 1px 1px #c2c1c129;
@@ -575,12 +575,11 @@ main {
       ul {
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: 100px;
       }
 
       .active {
         border-bottom: 2px solid #39cdcc;
-
         cursor: pointer;
         color: #39cdcc;
       }
