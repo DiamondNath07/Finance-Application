@@ -33,12 +33,14 @@ export default function Dashboard() {
        
       </section>
       <section className='useChart'>
-      {userChart.map((title)=>(
-        <div className='title'>
-          {title.heading}
-          <img src={title.icon} alt="filter" />
-        </div>
-      ))}
+        {userChart.map((item)=>(
+
+    <table>
+      <thead style={{display: "flex"}}>
+        <tr> {item.heading}</tr>
+      </thead>
+    </table>
+        ))}
       
       </section>
     </div>
