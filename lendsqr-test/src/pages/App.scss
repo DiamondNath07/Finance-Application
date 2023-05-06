@@ -411,18 +411,65 @@ main {
     }
   }
 
-  // .chartHeading {
-  //   margin-top: 20px;
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-
-  // .chartTitle {
-  //   display: flex;
-  //   align-items: center;
-  // }
-
-  
 }
+
+// userdeatails
+
+.eachUserDetails {
+  height: 100%;
+  padding: 50px 70px 0 70px;
+
+  .backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $textFont2;
+    font-size: 16px;
+    color: #545F7D;
+    background-color: #f4f4f4;
+  }
+
+  .topDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    h3 {
+      font-size: 14px;
+      font-family: $textFont2;
+      margin-left: 10px;
+      color: #545F7D;
+      margin-top: 20px;
+    } 
+      .btn1,
+      .btn2{
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        border: 1px solid #E4033B;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #E4033B;
+        font-weight: 500;
+        font-family: $textFont;
+        margin-right: 5px;
+
+      }
+
+      .btn2 {
+        border: 1px solid #39CDCC;
+        color: #39CDCC;
+      }
+
+      
+
+
+  }
+
+}
+
+
 
 
