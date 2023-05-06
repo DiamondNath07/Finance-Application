@@ -451,6 +451,7 @@ $textFont3: "Roboto", sans-serif;
     .tBody {
       .orgName {
         text-transform: capitalize;
+        position: relative;
       }
       td {
         text-align: start;
@@ -460,6 +461,7 @@ $textFont3: "Roboto", sans-serif;
         padding: 20px 0;
         padding-right: 20px;
         border-bottom: 1px solid #9495995d;
+        position: relative;
       }
 
       .email {
@@ -467,6 +469,16 @@ $textFont3: "Roboto", sans-serif;
       }
       .optionBar {
         padding-left: 50px;
+      }
+
+      .status {
+        background-color: rgba(241, 238, 238, 0.612);
+
+        // padding: 0 2px;
+        // padding: 5px 0;
+        height: 10px;
+        border-radius: 5px;
+        // position: absolute;
       }
     }
   }
