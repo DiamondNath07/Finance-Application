@@ -111,7 +111,7 @@ Install this project with:
 
 ```
  run 'yarn install' on your terminal to install all dependencies.
- 
+
 
 
 ```
@@ -145,7 +145,6 @@ To run the project, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -162,9 +161,7 @@ Feel free to check the [issues page](https://github.com/DiamondNath07/TakeHome/i
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project kindly consider me for the next round of the Interview. thanks
+> If you like this project kindly consider me for the next round of the Interview. thanks
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,12 +169,9 @@ If you like this project kindly consider me for the next round of the Interview.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Thanks to Lendsqr.
-
-I would like to thank Lendsqr team for drafting a professional test interview as this. It spurred me into attempting this and even in a professional standard
+> I would like to thank Lendsqr team for drafting a professional test interview as this. It spurred me into attempting this and even in a professional standard.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LICENSE -->
 
