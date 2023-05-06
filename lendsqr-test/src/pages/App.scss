@@ -7,10 +7,10 @@
 $page-bg: #fff;
 $auth-width: 50%;
 $auth-heigt: 100vh;
-$textFont: 'Avenir Next', sans-serif;
+$textFont: "Avenir Next", sans-serif;
 $fontColorG: #39cdcc;
-$textFont2: 'Open Sans', sans-serif;
-$textFont3: 'Roboto', sans-serif;
+$textFont2: "Open Sans", sans-serif;
+$textFont3: "Roboto", sans-serif;
 
 // Login page
 
@@ -420,7 +420,13 @@ $textFont3: 'Roboto', sans-serif;
     }
 
     .tableRow {
+      .orgHeader {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
       th {
+        position: relative;
         text-align: start;
         font-size: 12px;
         font-family: $textFont2;
@@ -432,6 +438,10 @@ $textFont3: 'Roboto', sans-serif;
           color: #545f7d;
         }
       }
+    }
+
+    .formModal {
+      position: absolute;
     }
 
     .tBody {
@@ -551,8 +561,6 @@ $textFont3: 'Roboto', sans-serif;
 
       .userTier {
         padding: 0 20px;
-        // border-right: 1px solid rgba(136, 136, 136, 0.343);
-        // padding-bottom: 15px;
         .userKind {
           font-family: $textFont2;
           font-size: 14px;
@@ -580,7 +588,6 @@ $textFont3: 'Roboto', sans-serif;
         .acNo {
           font-size: 14px;
           font-weight: 400;
-          // margin-top: 5px;
         }
       }
     }
@@ -652,6 +659,54 @@ $textFont3: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 14px;
       }
+    }
+  }
+}
+
+.formFilter {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid rgba(136, 136, 136, 0.391);
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: $textFont2;
+  font-size: 15px;
+  color: #545f7d;
+
+  .formData {
+    padding: 10px;
+
+    div {
+      padding-bottom: 10px;
+    }
+
+    select,
+    input {
+      border: 1px solid rgba(136, 136, 136, 0.391);
+      border-radius: 10px;
+      width: 250px;
+      height: 40px;
+      margin-top: 5px;
+      padding: 0 10px;
+      color: #545f7d;
+    }
+
+    .formBtn {
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      width: 120px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: #fff;
+      border: 1px solid rgba(136, 136, 136, 0.391);
+      font-family: $textFont2;
+    }
+
+    .resetBtn {
+      background-color: #39cdcc;
+      border: none;
     }
   }
 }
