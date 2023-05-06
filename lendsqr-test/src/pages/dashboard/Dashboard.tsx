@@ -1,47 +1,46 @@
-import React, { useState, useEffect }  from 'react';
-import { userTypes } from './dashboardData';
-import { userChart } from './usersChart';
-import { Fragment } from 'react';
+import React from "react";
+import { userTypes } from "./dashboardData";
+import { Fragment } from "react";
+import { GetUserDataService } from "../../features/mockapi";
+import Thead from "./Thead";
+import Tbody from "./Tbody";
 
 export default function Dashboard() {
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
-      .then(response => response.json())
-      .then(data => setUsers(data));
-  }, []);
+  const { data } = GetUserDataService();
+  const allUsers = data?.flatMap((user) => user);
 
   return (
     <div className="userDashboard">
       <section className="userTypes">
-        {userTypes.map((item)=>(
+        {userTypes.map((item) => (
           <Fragment>
-        <h2 key={item.id}>{item.header}</h2>
-        <div className="userCards">
-          {item.children.map((types)=>(
-            <div className='userAccounts'>
-            <img src={types.icon} alt="icons" />
-              <br />
-              <p className='accountTypes'>{types.item}</p>
-              <p className='accountCount'>{types.count}</p>
+            <h2 key={item.id}>{item.header}</h2>
+            <div className="userCards">
+              {item.children.map((types) => (
+                <div className="userAccounts">
+                  <img src={types.icon} alt="icons" />
+                  <br />
+                  <p className="accountTypes">{types.item}</p>
+                  <p className="accountCount">{allUsers?.length}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        </Fragment>
+          </Fragment>
         ))}
-       
       </section>
-      <section className='useChart'>
-        {userChart.map((item)=>(
-
-    <table>
-      <thead style={{display: "flex"}}>
-        <tr> {item.heading}</tr>
-      </thead>
-    </table>
-        ))}
-      
+      <section className="useChart">
+        <table>
+          <thead>
+            <Thead />
+          </thead>
+          <tbody>
+            {data?.map((user) => (
+              <Fragment key={user.id}>
+                <Tbody user={user} />
+              </Fragment>
+            ))}
+          </tbody>
+        </table>
       </section>
     </div>
   );

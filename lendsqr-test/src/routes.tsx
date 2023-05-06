@@ -12,11 +12,11 @@ export const routes = (user: IUser | null) =>
       element: user ? <MainLayout /> : <Navigate to="/auth" />,
       children: [
         {
-          path: "dashboard",
+          path: "",
           element: <Dashboard />,
         },
         {
-          path: "/",
+          path: "details",
           element: <Userdetails />,
         },
       ],
