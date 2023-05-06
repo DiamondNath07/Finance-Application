@@ -29,7 +29,7 @@ export default function Dashboard() {
         ))}
       </section>
       <section className="useChart">
-        <table>
+        <table className="userTable">
           <thead>
             <Thead />
           </thead>
