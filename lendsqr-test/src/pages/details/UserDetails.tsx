@@ -1,60 +1,30 @@
 import React from "react";
-import arrowBack from '../../assets/images/arrowBack.png'
-import userProfileIcon from "../../assets/images/userProfileIcon.png";
-import noStar from "../../assets/images/noStar.png";
-import starFull from "../../assets/images/starFull.png";
-
+import Topsection from "./components/TopSection";
+import Usercard from "./components/Usercard";
+import PersonalInfo from "./components/PersonalInfo";
+import { GetUserDetailService } from "../../features/mockapi";
+import EducationAndEmployment from "./components/EducationAndEmployment";
+import Socials from "./components/Socials";
+import Guarantor from "./components/Guarantor";
 
 export default function Userdetails() {
+  const { data } = GetUserDetailService();
   return (
     <div className="eachUserDetails">
-     <section className="topSection">
-    <button className="backBtn">
-      <img src={arrowBack} alt="arrowBack" />
-      <p>Back to users</p>
-    </button>
-    <div className="topDetails">
-    <h3>User Details</h3>
-    <div className="actionBtns">
-      <button className="btn1">blacklist user</button>
-      <button className="btn2">activate user</button>
-    </div>
-    </div>
-     </section>
-     <section className="userBoard">
-      <div>
-        <img src={userProfileIcon} alt="userIcon" />
-         <span>
-          <h3>Adedeji Grace</h3>
-          <p>LSQFf587g90</p>
-         </span>
-         <span>
-          <p>user Tier</p>
-          <p>
-            <img src={starFull} alt="icon" />
-            <img src={noStar} alt="icon" />
-            <img src={noStar} alt="icon" />
-          </p>
-         </span>
-         <span>
-          <p>₦200,000.00</p>
-          <p>9912345678/Providus Bank</p>
-         </span>
-         <div className="userOption">
-          <ul>
-            <li>General Details</li>
-            <li>Documents</li>
-            <li>Bank Details</li>
-            <li>Loans</li>
-            <li>Savings</li>
-            <li>App and System</li>
-          </ul>
-         </div>
-      </div>
-     </section>
-     <section className="">
-
-     </section>
+      <section className="topSection">
+        <Topsection />
+      </section>
+      <section className="userBoard">
+        <>
+          <Usercard user={data?.data} />
+        </>
+      </section>
+      <section className="">
+        <PersonalInfo personal={data?.data} />
+        <EducationAndEmployment education={data?.data} />
+        <Socials socials={data?.data} />
+        <Guarantor guarantor={data?.data} />
+      </section>
     </div>
   );
 }

@@ -10,3 +10,12 @@ export const GetUserDataService = () => {
     return data?.data;
   });
 };
+
+export const GetUserDetailService = () => {
+  const getCurrUser = localStorage.getItem("lendsqrCurrentUser");
+  const url = `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/1`;
+  return useQuery(["details", { getCurrUser }], async () => {
+    const data = await axios.get(url);
+    return data;
+  });
+};
