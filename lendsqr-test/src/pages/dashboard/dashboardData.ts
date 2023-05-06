@@ -1,7 +1,10 @@
 import userIcon from "../../assets/images/userIcon.png";
 import userActive from "../../assets/images/userActive.png";
 import userLoans from "../../assets/images/userLoans.png";
-import userSavings from "../../assets/images/userSavings.png"
+import userSavings from "../../assets/images/userSavings.png";
+import filterIcon from "../../assets/images/filter.png"
+
+
 
 
 export const userTypes = [
@@ -34,5 +37,32 @@ export const userTypes = [
         count: 102453,
       },
     ],
+  },
+];
+
+export const userChart = [
+  {
+       heading: 'organization',
+       icon: filterIcon
+  },
+  {
+       heading: 'username',
+       icon: filterIcon
+  },
+  {
+       heading: 'email',
+       icon: filterIcon
+  },
+  {
+       heading: 'phone number',
+       icon: filterIcon
+  },
+  {
+       heading: 'date joined',
+       icon: filterIcon
+  },
+  {
+       heading: 'status',
+       icon: filterIcon
   },
 ];

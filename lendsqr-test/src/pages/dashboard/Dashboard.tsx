@@ -1,8 +1,17 @@
-import React  from 'react';
+import React, { useState, useEffect }  from 'react';
 import { userTypes } from './dashboardData';
+import { userChart } from './usersChart';
 import { Fragment } from 'react';
 
 export default function Dashboard() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
+      .then(response => response.json())
+      .then(data => setUsers(data));
+  }, []);
+
   return (
     <div className="userDashboard">
       <section className="userTypes">
@@ -23,8 +32,14 @@ export default function Dashboard() {
         ))}
        
       </section>
-      <section>
-
+      <section className='useChart'>
+      {userChart.map((title)=>(
+        <div className='title'>
+          {title.heading}
+          <img src={title.icon} alt="filter" />
+        </div>
+      ))}
+      
       </section>
     </div>
   );

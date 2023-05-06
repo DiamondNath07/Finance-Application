@@ -232,6 +232,8 @@ main {
       position: relative;
     }
 
+    
+
     .bar {
       width: 2px;
       height: 100%;
@@ -241,6 +243,17 @@ main {
       left: 0;
       opacity: 0;
     }
+
+    .bizIcons {
+      display: flex;
+      align-items: center;
+    }
+
+    .itemNames {
+      margin-left: 10px;
+    }
+
+
     .detailsInCategory:hover .bar {
       opacity: 1;
     }
@@ -346,7 +359,7 @@ main {
 // dashboard
 
 .userDashboard {
-  height: 100vh;
+  height: 100%;
   padding: 50px 70px 0 70px;
 
   .userTypes {
@@ -363,7 +376,7 @@ main {
       display: grid;
       grid-template-columns: repeat(4, 200px);
       margin-top: 10px;
-      gap: 10px;
+      gap: 20px;
 
       .userAccounts {
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
@@ -386,6 +399,28 @@ main {
       }
     }
   }
+
+  // useChart
+
+  .useChart {
+    margin-top: 30px;
+
+    .title {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // .chartHeading {
+  //   margin-top: 20px;
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+
+  // .chartTitle {
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   
 }

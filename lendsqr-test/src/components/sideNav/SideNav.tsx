@@ -34,7 +34,13 @@ export default function SideNav() {
                 <article key={child.id} >
                   <div className="detailsInCategory">
                     <div className="bar"></div>
-                    {child.item}</div>
+                    <span className="bizIcons">
+                      <img src={child.icon} alt="businessIcon" />
+                      <p className="itemNames">
+                      {child.item}
+                      </p>
+                    </span>
+                    </div>
                 </article>
               ))}
             </Fragment>

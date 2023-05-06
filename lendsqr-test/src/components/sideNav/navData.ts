@@ -1,4 +1,20 @@
 
+import userFriends from "../../assets/images/user-friends 1.png";
+import users1 from "../../assets/images/users 1.png";
+import sack1 from "../../assets/images/sack 1.png";
+import handShake from "../../assets/images/Vector.png";
+import piggyBank from "../../assets/images/piggy-bank 1.png";
+import group104 from "../../assets/images/Group 104.png";
+import userCheck from "../../assets/images/user-check 1.png";
+import userTimes from "../../assets/images/user-times 1.png";
+import briefacase from "../../assets/images/briefcase.png";
+import bank from "../../assets/images/Group.png";
+import coins from "../../assets/images/coins-solid 1.png";
+import mobileTransfer from "../../assets/images/icon.png";
+import services from "../../assets/images/Vector (1).png";
+import userCog from "../../assets/images/user-cog 1.png";
+import scroll from "../../assets/images/scroll 1.png";
+import chartbar from "../../assets/images/chart-bar 2.png";
 
 
 export const sideNavData = [
@@ -8,49 +24,49 @@ export const sideNavData = [
     children: [
       {
         id: 1.1,
-        icon: "entity icon",
+        icon: userFriends,
         item: "user",
         link: "/details",
       },
       {
         id: 1.2,
-        icon: "entity icon",
+        icon: users1,
         item: "guarantor",
         link: "/details",
       },
       {
         id: 1.3,
-        icon: "entity icon",
+        icon: sack1,
         item: "loan",
         link: "/details",
       },
       {
         id: 1.4,
-        icon: "entity icon",
+        icon: handShake,
         item: "decision model",
         link: "/details",
       },
       {
         id: 1.5,
-        icon: "entity icon",
+        icon: piggyBank,
         item: "savings",
         link: "/details",
       },
       {
         id: 1.6,
-        icon: "entity icon",
+        icon: group104,
         item: "loan request",
         link: "/details",
       },
       {
         id: 1.7,
-        icon: "entity icon",
+        icon: userCheck,
         item: "white list",
         link: "/details",
       },
       {
         id: 1.8,
-        icon: "entity icon",
+        icon: userTimes,
         item: "karma",
         link: "/details",
       },
@@ -62,55 +78,55 @@ export const sideNavData = [
     children: [
       {
         id: 2.1,
-        icon: "entity icon",
+        icon: briefacase,
         item: "Organization",
         link: "/details",
       },
       {
         id: 2.2,
-        icon: "entity icon",
+        icon: group104,
         item: "Loan Product",
         link: "/details",
       },
       {
         id: 2.3,
-        icon: "entity icon",
+        icon: bank,
         item: "Savings Product",
         link: "/details",
       },
       {
         id: 2.4,
-        icon: "entity icon",
+        icon: coins,
         item: "Fees and Charges",
         link: "/details",
       },
       {
         id: 2.5,
-        icon: "entity icon",
+        icon: mobileTransfer,
         item: "Transaction",
         link: "/details",
       },
       {
         id: 2.6,
-        icon: "entity icon",
+        icon: services,
         item: "Services",
         link: "/details",
       },
       {
         id: 2.7,
-        icon: "entity icon",
+        icon: userCog,
         item: "Service Account",
         link: "/details",
       },
       {
         id: 2.8,
-        icon: "entity icon",
+        icon: scroll,
         item: "Settlements",
         link: "/details",
       },
       {
         id: 2.9,
-        icon: "entity icon",
+        icon: chartbar,
         item: "Reports",
         link: "/details",
       },
