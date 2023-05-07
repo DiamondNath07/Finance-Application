@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import filter from "../../../assets/images/filter.png"
+import filter from "../../../assets/images/filter.png";
 import "../../../pages/App.scss";
 import Form from "./Form";
 export default function Thead() {
@@ -31,7 +31,7 @@ export default function Thead() {
         </th>
         <th></th>
       </tr>
-      <section className="formModal">{form && <Form />}</section>
+      <div className="formModal">{form && <Form />}</div>
     </>
   );
 }
