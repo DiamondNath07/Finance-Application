@@ -1,9 +1,9 @@
 import React from "react";
 import noStar from "../../../assets/images/noStar.png";
 import starFull from "../../../assets/images/starFull.png";
+import { IUserDetails } from "../../../components/interface";
 
-export default function Usercard({ user }: { user: any }) {
-  console.log(user);
+export default function Usercard({ user }: { user: IUserDetails }) {
   return (
     <section className="userBoard">
       <div className="userData">

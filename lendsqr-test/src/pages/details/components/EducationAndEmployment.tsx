@@ -1,9 +1,10 @@
 import React from "react";
+import { IUserDetails } from "../../../components/interface";
 
 export default function EducationAndEmployment({
   education,
 }: {
-  education: any;
+  education: IUserDetails;
 }) {
   return (
     <div>

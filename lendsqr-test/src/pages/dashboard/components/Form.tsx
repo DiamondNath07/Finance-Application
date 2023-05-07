@@ -35,7 +35,7 @@ export default function Form() {
           <input type="text" id="status" name="status" />
         </div>
         <div className="formBtn">
-          <button type="submit">Submit</button>
+          <button type="button">Submit</button>
           <button className="resetBtn" type="reset">
             Reset
           </button>

@@ -1,8 +1,8 @@
 import React from "react";
 import "./detailscard.scss";
-// import { IUserData } from "../../../components/interface";
+import { IUserDetails } from "../../../components/interface";
 
-export default function PersonalInfo({ personal }: { personal: any }) {
+export default function PersonalInfo({ personal }: { personal: IUserDetails }) {
   return (
     <div>
       <p className="infoTitle">Personal Information</p>

@@ -1,6 +1,7 @@
 import React from "react";
+import { IUserDetails } from "../../../components/interface";
 
-export default function Socials({ socials }: { socials: any }) {
+export default function Socials({ socials }: { socials: IUserDetails }) {
   return (
     <div>
       <p className="infoTitle">Socials</p>

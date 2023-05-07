@@ -1,11 +1,13 @@
 import React from "react";
 import arrowBack from "../../../assets/images/arrowBack.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Topsection() {
+  const navigate = useNavigate();
   return (
     <div>
       {" "}
-      <button className="backBtn">
+      <button className="backBtn" onClick={() => navigate("/")}>
         <img src={arrowBack} alt="arrowBack" />
         <p>Back to users</p>
       </button>

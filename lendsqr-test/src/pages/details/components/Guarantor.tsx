@@ -1,6 +1,7 @@
 import React from "react";
+import { IUserDetails } from "../../../components/interface";
 
-export default function Guarantor({ guarantor }: { guarantor: any }) {
+export default function Guarantor({ guarantor }: { guarantor: IUserDetails }) {
   return (
     <div>
       <p className="infoTitle">Guarantor</p>

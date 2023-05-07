@@ -409,6 +409,7 @@ $textFont3: "Roboto", sans-serif;
   // useChart
 
   .useChart {
+    position: relative;
     margin-top: 30px;
     padding: 0px 70px 0 70px;
 
@@ -425,6 +426,7 @@ $textFont3: "Roboto", sans-serif;
 
     .tableRow {
       .orgHeader {
+        position: relative;
         display: flex;
         align-items: center;
         position: relative;
@@ -688,6 +690,8 @@ $textFont3: "Roboto", sans-serif;
   font-family: $textFont2;
   font-size: 15px;
   color: #545f7d;
+  z-index: 3;
+  position: absolute;
 
   .formData {
     padding: 10px;
