@@ -3,10 +3,8 @@ import "./App.scss";
 import Lendsqr from "../assets/images/lendsqr.svg";
 import Logo from "../assets/images/logo.svg";
 import OnboardingImg from "../assets/images/onbaordingImg.png";
-import { useNavigate } from "react-router-dom";
 
 function Auth() {
-  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -24,7 +22,7 @@ function Auth() {
     localStorage.setItem("lendsqrUser", JSON.stringify(lendsqrUser));
     const storedUser = localStorage.getItem("lendsqrUser");
     if (storedUser) {
-      navigate("/");
+      window.location.href = "/";
     }
   };
 
