@@ -498,6 +498,14 @@ $textFont3: "Roboto", sans-serif;
       font-size: 16px;
       color: #545f7d;
       background-color: #f4f4f4;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    .backBtn:hover {
+      background-color: rgba(136, 136, 136, 0.565);
+      border-radius: 5px;
+      color: #fff;
     }
 
     .topDetails {
