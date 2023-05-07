@@ -726,3 +726,55 @@ $textFont3: "Roboto", sans-serif;
     }
   }
 }
+
+// pagination
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  .dataLoadCount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $textFont2;
+    color: #213f7d;
+    font-size: 14px;
+
+    select {
+      background-color: #87888b50;
+      padding: 2px;
+      border-radius: 2px;
+      margin: 0 3px;
+      color: #213f7d;
+    }
+  }
+
+  .pagesNo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .prevBtn {
+      rotate: 180deg;
+    }
+    .numbers {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      padding: 0 5px;
+      margin: 0;
+    }
+
+    .pageLink {
+      color: #545f7d4c;
+      font-family: $textFont2;
+      font-size: 14px;
+
+      button {
+        color: #545e7b;
+      }
+    }
+  }
+}

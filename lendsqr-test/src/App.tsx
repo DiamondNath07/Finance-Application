@@ -12,7 +12,8 @@ function App() {
       const parsedItem = JSON.parse(storedUser) as IUser;
       setUser(parsedItem);
     }
-  }, []);
+  }, [user]);
+
   return (
     <>
       <RouterProvider router={routes(user)} />

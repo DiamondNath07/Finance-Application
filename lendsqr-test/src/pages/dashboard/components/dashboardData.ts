@@ -1,8 +1,8 @@
-import userIcon from "../../assets/images/userIcon.png";
-import userActive from "../../assets/images/userActive.png";
-import userLoans from "../../assets/images/userLoans.png";
-import userSavings from "../../assets/images/userSavings.png";
-import filterIcon from "../../assets/images/filter.png"
+import userIcon from "../../../assets/images/userIcon.png";
+import userActive from "../../../assets/images/userActive.png";
+import userLoans from "../../../assets/images/userLoans.png";
+import userSavings from "../../../assets/images/userSavings.png";
+import filterIcon from "../../../assets/images/filter.png"
 
 
 

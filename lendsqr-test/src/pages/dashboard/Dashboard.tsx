@@ -1,23 +1,32 @@
-import React from "react";
-import { userTypes } from "./dashboardData";
+import React, { useState } from "react";
+import { userTypes } from "./components/dashboardData";
 import { Fragment } from "react";
 import { GetUserDataService } from "../../features/mockapi";
-import Thead from "./Thead";
-import Tbody from "./Tbody";
+import Thead from "./components/Thead";
+import Tbody from "./components/Tbody";
+import Pagination from "./components/Pagination";
 
 export default function Dashboard() {
   const { data } = GetUserDataService();
+  const [currPage, setCurrPage] = useState<number>(1);
+  const [userPerPage] = useState(10);
   const allUsers = data?.flatMap((user) => user);
+
+  const indexOfLastUser = currPage * userPerPage;
+  const indexOfFirstUser = indexOfLastUser - userPerPage;
+  const usersPerPage = data?.slice(indexOfFirstUser, indexOfLastUser);
+
+  const paginate = (pageNumber: number) => setCurrPage(pageNumber);
 
   return (
     <div className="userDashboard">
       <section className="userTypes">
         {userTypes.map((item) => (
-          <Fragment>
-            <h2 key={item.id}>{item.header}</h2>
+          <Fragment key={item.id}>
+            <h2>{item.header}</h2>
             <div className="userCards">
               {item.children.map((types) => (
-                <div className="userAccounts">
+                <div key={types.id} className="userAccounts">
                   <img src={types.icon} alt="icons" />
                   <br />
                   <p className="accountTypes">{types.item}</p>
@@ -28,19 +37,25 @@ export default function Dashboard() {
           </Fragment>
         ))}
       </section>
-      <section className="useChart">
+      <section className="useChart" style={{ marginBottom: "4rem" }}>
         <table className="userTable">
           <thead>
             <Thead />
           </thead>
           <tbody>
-            {data?.map((user) => (
+            {usersPerPage?.map((user) => (
               <Fragment key={user.id}>
                 <Tbody user={user} />
               </Fragment>
             ))}
           </tbody>
         </table>
+        <Pagination
+          userPerPage={userPerPage}
+          totalUsers={allUsers?.length}
+          paginate={paginate}
+          currPage={currPage}
+        />
       </section>
     </div>
   );

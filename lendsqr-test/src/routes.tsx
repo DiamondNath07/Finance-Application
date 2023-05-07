@@ -9,7 +9,7 @@ export const routes = (user: IUser | null) =>
   createBrowserRouter([
     {
       path: "/",
-      element: user ? <MainLayout /> : <Navigate to="/auth" />,
+      element: user !== null ? <MainLayout /> : <Navigate to="/auth" />,
       children: [
         {
           path: "/",

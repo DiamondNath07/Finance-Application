@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
-import filter from "../../assets/images/filter.png";
-import "../../pages/App.scss";
+import filter from "../../../assets/images/filter.png"
+import "../../../pages/App.scss";
 import Form from "./Form";
 export default function Thead() {
   const [form, setForm] = useState(false);

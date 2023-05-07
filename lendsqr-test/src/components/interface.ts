@@ -13,7 +13,7 @@ interface IEducation {
   employmentStatus: string;
   level: string;
   loanRepayment: string;
-  monthlyIncome: [];
+  monthlyIncome: string[];
   officeEmail: string;
   sector: string;
 }
@@ -57,4 +57,20 @@ export interface IUserData {
   profile: IProfile;
   socials: ISocials;
   userName: string;
+}
+
+export interface IUserDetails {
+  createdAt: string;
+  orgName: string;
+  userName: string;
+  email: string;
+  phoneNumber: string;
+  lastActiveDate: string;
+  profile: IProfile;
+  guarantor: IGuarantor;
+  accountBalance: string;
+  accountNumber: string;
+  socials: ISocials;
+  education: IEducation;
+  id: string;
 }
