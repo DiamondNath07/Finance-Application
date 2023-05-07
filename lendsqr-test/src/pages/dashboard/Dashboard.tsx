@@ -37,7 +37,7 @@ export default function Dashboard() {
           </Fragment>
         ))}
       </section>
-      <section className="useChart" style={{ marginBottom: "4rem" }}>
+      <section className="useChart" >
         <table className="userTable">
           <thead>
             <Thead />
