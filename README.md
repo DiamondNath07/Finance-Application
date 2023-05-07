@@ -75,7 +75,7 @@
 
 > View live here
 
-- [Live Demo Link](https://diamondnath07.github.io/math_magician/dist/)
+- [Live Demo Link](https://nathaniel-diamond-lendsqr-fe-test-ruby.vercel.app/auth)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
